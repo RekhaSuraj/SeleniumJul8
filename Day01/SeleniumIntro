@@ -1,0 +1,49 @@
+Selenium
+
+Selenium is an open source web application test automation tool
+Other tools - QTP, AutoCad, Photoshop, Xerox
+
+Automation - Washing Machine, Mixer, Grinder, DishWasher - Less time, effort
+Performing tasks without any manual intervention
+
+Examples of Desktop apps - Notepad, Word, Excel etc..
+Mobile Apps - WhatsApp, Facebook, Insta
+Web Apps - google.com, facebook.com, grktrainings.com
+
+Limitation of Selenium - We can test only webapp
+
+Browsers: Chrome, Firefox, Edge, Safari, IE etc..
+
+Selenium supports following languages
+1. C#
+2. Ruby
+3. Java
+4. Python
+5. JS
+6. Haskell
+7. Perl
+8. PHP
+9. Dart
+10.SmallTalk
+
+How to install Selenium
+1. Python, PyCharm
+
+From cmd - pip install selenium
+or we can also install from PyCharm project/Settings/Install packages
+
+Driver
+
+In Selenium, a driver is a component that acts as a bridge between your Selenium script and the actual web browser you want to automate.
+
+What Does a Driver Do?
+It translates your Selenium commands (written in Python, Java, etc.) into browser-specific actions.
+It launches the browser, controls it (click, input text, navigate, etc.), and retrieves data from it.
+
+
+Common Browser Drivers in Selenium
+Browser	        Driver Used	                Executable File (Example)
+Chrome	        ChromeDriver	            chromedriver.exe
+Firefox	        GeckoDriver (by Mozilla)	geckodriver.exe
+Edge	        EdgeDriver	                msedgedriver.exe
+Safari(Mac)	    SafariDriver	            Built-in on macOS
