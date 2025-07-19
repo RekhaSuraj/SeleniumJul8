@@ -13,6 +13,10 @@ time.sleep(2)
 driver.find_element(By.XPATH,"//input[@type='submit']").click()
 time.sleep(2)
 alert_popup = driver.switch_to.alert
+
+# To print the text of alert popup
+print(alert_popup.text)
+# This is Alert Popup
 # alert_popup.accept()
 alert_popup.dismiss()
 time.sleep(3)
