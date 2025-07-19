@@ -11,7 +11,7 @@ time.sleep(2)
 
 act = ActionChains(driver)
 india_link = driver.find_element(By.XPATH,"(//a[text()='India'])[2]")
-act.scroll_to_element(india_link)
+act.scroll_to_element(india_link).perform()
 
 time.sleep(2)
 india_link.click()
