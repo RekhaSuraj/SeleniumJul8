@@ -1,0 +1,39 @@
+Popups
+1. frame popup
+    looks like popup
+    created using iframe
+    we can inspect it
+    we handle it using switchto_frame & findElement
+
+2. Alert popup
+     as called as JS popup
+     displayed below the address bar and in the middle 
+     contains OK & cancel button
+     we cant inspect it
+    how to handle it
+      ans:driver.switch_to.alert
+      	.text ----> get the msg
+	.accept()--> click ok
+	.dismiss()--> click cancel
+
+3. File upload popup
+     we get this when we click on button (browse attach choose file...)
+     it is used to browse and select the file to be uploaded
+     we can move the popup
+     find the upload button, used sendkeys and specify absolute file path
+
+4. File download popup?
+    
+    we dont get any popup, it will download automatically
+
+<span data-cy="closeModal" class="commonModal__close"></span>
+//span[@data-cy='closeModal']
+
+5. HTML popup---> hidden division popup
+    we can inspect
+    we cant move
+    use find element
+
+
+
+
