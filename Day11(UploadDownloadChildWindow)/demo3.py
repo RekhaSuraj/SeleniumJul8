@@ -25,6 +25,8 @@ file_name = driver.find_element(By.ID,"DirectLink_6").text
 # C:/users/suraj/Downloads/V3_BOQ_ItemRate_Template.xls
 download_path = 'C:/users/suraj/Downloads/'+file_name
 
+# download_path = 'C:/users/suraj/Downloads/V3_BOQ_ItemRate_Template.xls'
+
 # Path verification
 if os.path.exists(download_path):
     print('Download Successful')
