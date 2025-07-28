@@ -9,6 +9,7 @@ class LoginPage:
     __login = (By.XPATH,"//button[@type='submit']")
 
     def __init__(self, driver):
+        self.driver = driver
         self.un_tb = driver.find_element(*self.__un)
         self.pwd_tb = driver.find_element(*self.__pwd)
         self.login_btn = driver.find_element(*self.__login)
@@ -25,18 +26,19 @@ class LoginPage:
 
 class HomePage:
 
-    __userPic = (By.CSS_SELECTOR,".oxd-userdropdown-name")
-    __logout = (By.XPATH,"//a[text()='Logout']")
+    # __userPic = (By.CLASS_NAME,"oxd-userdropdown-name")
+    # __logout = (By.XPATH,"//a[text()='Logout']")
 
     def __init__(self,driver):
-        self.__userPic = driver.find_element(*self.__userPic)
-        self.__logout = driver.find_element(*self.__logout)
+        self.driver = driver
+        self.__userPic_btn = (By.CLASS_NAME,"oxd-userdropdown-name")
+        self.__logout_btn = (By.XPATH,"//a[text()='Logout']")
 
     def userPic_click(self):
-        self.__userPic.click()
+        driver.find_element(*self.__userPic_btn).click()
 
     def click_logout(self):
-        self.__logout.click()
+        driver.find_element(*self.__logout_btn).click()
 
 
 driver = Chrome()
@@ -53,7 +55,7 @@ time.sleep(2)
 home_Page = HomePage(driver)
 driver.implicitly_wait(10)
 home_Page.userPic_click()
-time.sleep(2)
+time.sleep(5)
 home_Page.click_logout()
 time.sleep(3)
 
