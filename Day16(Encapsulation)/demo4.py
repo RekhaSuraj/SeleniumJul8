@@ -41,6 +41,7 @@ class HomePage:
         driver.find_element(*self.__logout_btn).click()
 
 
+
 driver = Chrome()
 driver.get('https://opensource-demo.orangehrmlive.com')
 driver.implicitly_wait(10)
