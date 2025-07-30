@@ -1,0 +1,12 @@
+To see the output only---> pytest -s
+To run all test --> pytest
+To see class/method names and also output, status --->pytest -vs
+To just list all the Dir,Module, Class Names, functions --> pytest --collect-only
+to execute specific module --> pytest test_demo1.py -vs
+to execute specific class --> pytest test_demo2.py::Test_B -vs
+To execute specific method --> pytest test_demo2.py::Test_B::test_m2 -vs
+
+html report
+pip install pytest-html
+Or install package from settings
+
